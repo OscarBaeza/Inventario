@@ -12,13 +12,15 @@ import { Navbar,
   Offcanvas } from 'react-bootstrap';
   //import Productos from './Tablas/Productos.js';
   import Home from './Home.js';
+  import './CSS/Styles.css';
   
 
   
 
 ReactDOM.render(
  <Router>
-   <div>
+   <div className='div-inicio'>
+
           <Navbar bg="primary"expand={false}>
             <Container fluid>
               <Navbar.Brand href="/home">Inventario</Navbar.Brand>
@@ -66,6 +68,7 @@ ReactDOM.render(
             </Container>
   
           </Navbar>
+          <Home/>
           <Routes>
           <Route path="/home" element={<Home/>} />
           
